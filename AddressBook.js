@@ -143,3 +143,21 @@ console.log(addressBookArray);
 console.log(
     "\nCount of Contacts : " + addressBookArray.reduce(getCountOfContacts, 0)
 );
+
+
+//UC8
+function sortAddressBookByCity() 
+{
+    addressBookArray.sort((firstPerson, secondPerson) =>
+      firstPerson.city.localeCompare(secondPerson.city)
+    );
+    console.log(addressBookArray);
+}
+
+function sortAddressBookByState() 
+{
+    addressBookArray.sort((firstPerson, secondPerson) =>
+      firstPerson.state.localeCompare(secondPerson.state)
+    );
+    console.log(addressBookArray);
+}
