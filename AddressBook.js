@@ -145,19 +145,17 @@ console.log(
 );
 
 
-//UC8
-function sortAddressBookByCity() 
-{
+//---------------------------------//
+function sortAddressBookByCity() {
     addressBookArray.sort((firstPerson, secondPerson) =>
-      firstPerson.city.localeCompare(secondPerson.city)
+        firstPerson.city.localeCompare(secondPerson.city)
     );
     console.log(addressBookArray);
 }
 
-function sortAddressBookByState() 
-{
+function sortAddressBookByState() {
     addressBookArray.sort((firstPerson, secondPerson) =>
-      firstPerson.state.localeCompare(secondPerson.state)
+        firstPerson.state.localeCompare(secondPerson.state)
     );
     console.log(addressBookArray);
 }
