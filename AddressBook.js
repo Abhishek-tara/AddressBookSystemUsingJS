@@ -16,3 +16,15 @@ function contactExists(firstName, lastName) {
         (contact) => contact.firstName == firstName && contact.lastName == lastName
     );
 }
+
+//UC-05---->Function to delete a contact
+function deleteContact(firstName, lastName) {
+    if (contactExists(firstName, lastName)) {
+        addressBookArray = addressBookArray.filter(
+            (contact) =>
+                contact.firstName != firstName && contact.lastName != lastName
+        );
+    } else {
+        console.log("Contact Does Not Exist");
+    }
+}
